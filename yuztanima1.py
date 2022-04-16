@@ -1,7 +1,8 @@
+#BU PROGRAMIN ÇALIŞMASI İÇİN  OPENCV 'haarcascade' DOSYALARINA İHTİYAÇ VARDIR. VİDEO ÜZERİNDE YÜZ VE GÖZ ÇERÇEVELER
 import cv2
 import numpy as np
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(0) #FARKLI KAMERADA ÇALIŞTIRMAK İÇİN 1, VİDEO DOSYASINDA ÇALIŞTIRMAK İÇİN İSE "videoadi.uzanti" ŞEKLİNDE GİRİNİZ ÖRNEK: cv2.VideoCapture("video.mp4")
 
 while True:
     x,cap = cam.read()
